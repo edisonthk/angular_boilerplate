@@ -12,3 +12,4 @@ This boilerplate including
 * minimal angularJS required 
 * ui-router `$stateChangeSuccess` event
 * commented `$locationProvider.html5mode(true)`
+* resource factory for API
