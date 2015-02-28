@@ -11,4 +11,4 @@ This boilerplate including
 ### Sample code
 * minimal angularJS required 
 * ui-router `$stateChangeSuccess` event
-* commented html5mode 
+* commented `$locationProvider.html5mode(true)`
