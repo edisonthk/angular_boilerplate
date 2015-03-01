@@ -8,13 +8,35 @@
 
 		<link rel="icon" type="image/png" href="/img/icon@57x57.png" />
 		<base href="/angular/">
+
+		<link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+
 	</head>
 	<body ng-controller="MyController">
 		
-		<h1>{{hello}}</h1>
-	    <!-- We'll also add some navigation: -->
-	    <a ui-sref="state1">State 1</a>
-	    <a ui-sref="state2">State 2</a>
+		<div class="container">
+			<header>
+				<div class="inline"><img src="imgs/icon.gif"></div>
+			</header>
+			<h1>{{hello}}</h1>
+		    <!-- We'll also add some navigation: -->
+		    <a ui-sref="state1">State 1</a>
+		    <a ui-sref="state2">State 2</a>
+
+		    <footer>
+	    		<ul class="foot_nav">
+					<li><a href="/">トップ</a></li>
+					<li><a href="/sitemap/">サイトマップ</a></li>
+					<li><a href="http://recruit.p-up.jp/" target="_blank">リクルート</a></li>
+					<li><a href="http://www.p-up.jp/" target="_blank">企業情報</a></li>
+					<li><a href="/policy/">プライバシーポリシー</a></li>
+					<li class="last"><a href="/inquiry/">お問い合わせ</a></li>
+				</ul>
+				<div class="copyright">Copyright(c) 2014 teluru All rights reserved.</div>
+		    </footer>
+		</div>
+
 
 
 		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>

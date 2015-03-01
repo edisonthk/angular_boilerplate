@@ -1,0 +1,53 @@
+/* optimize normalize.css */
+body {
+	font: 13px/1 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 1.3;
+}
+a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+/* Application styles */ 
+.container {
+	width: 983px;
+	margin: 0 auto;
+}
+.inline {
+	display: inline-block;
+}
+
+
+header {
+	display: block;
+	width: 100%;	
+}
+
+footer {
+	border-top: 1px #fa208d solid;
+	width: 100%;
+	margin-top: 20px;
+	display: block;
+	font-size: 90%;
+	padding-top: 15px;
+}
+footer ul.foot_nav {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+footer ul.foot_nav > li {
+	display: inline-block;
+	border-left: 1px solid #000;
+}
+footer ul.foot_nav > li a{
+	padding: 0 15px;
+}
+footer ul.foot_nav > li.last {
+	border-right: 1px solid #000;
+}
+footer .copyright {
+	float: right;
+}
