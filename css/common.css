@@ -8,20 +8,52 @@ a {
 	text-decoration: none;
 	color: black;
 }
+input:focus {
+	outline: none;
+}
 
 /* Application styles */ 
 .container {
 	width: 983px;
 	margin: 0 auto;
 }
-.inline {
+.inline, .inline > *{
 	display: inline-block;
 }
 
-
 header {
+	margin-top: 20px;
 	display: block;
 	width: 100%;	
+}
+header .inline {
+	padding-bottom: 7px;
+	padding-right: 200px;
+	border-bottom: 2px solid #ccc;
+}
+header h1 {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: -10px;
+	left: 10px;
+}
+
+.content {
+	display: block;
+	width: 100%;
+}
+.content .animator {
+	display: block;
+}
+
+.content .searchbox {
+	width: 400px;
+	border: 0;
+	background-color: #ddd;
+	color: #333;
+	font-size: 110%;
+	padding: 5px 8px;
 }
 
 footer {

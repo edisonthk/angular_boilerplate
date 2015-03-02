@@ -1,4 +1,6 @@
-angular.module('app',['ui.router', 'app.controllers'])
+
+
+angular.module('app',['ui.router', 'app.controllers', 'app.directives'])
 
 	.config(['$locationProvider','$stateProvider', function($locationProvider,$stateProvider){
 
