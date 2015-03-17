@@ -10,11 +10,7 @@ angular.module('app.directives',[])
 			transclude: true,
 			template: '<div class="animator"><img /><ng-transclude /></div>',
 			link: function(scope, element, attrs, ctrl){
-				if(typeof $rootScope.AnimatorEngine === "undefined"){
-					console.log("intial");
-					$rootScope.AnimatorEngine = new AnimatorEngine();
-				}
-
+				
 
 				var infoImgs = [];
 				for (var i = 0; i < 19; i++) {
@@ -23,10 +19,6 @@ angular.module('app.directives',[])
 				};
 				
 				
-				$rootScope.AnimatorEngine.registerAnimator(scope.id,{
-					element: element.find("img")[0],
-					frames: infoImgs
-				});
 		      // scope.image = "imgs/info/info0001.png";
 		    },    
 		};

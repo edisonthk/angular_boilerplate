@@ -3,11 +3,7 @@
 angular.module('app.controllers',[])
 	.controller('MyController', ['$scope','$rootScope','$state', '$stateParams',function($scope, $rootScope, $state, $stateParams){
 
-		if(typeof $rootScope.AnimatorEngine === "undefined"){
-			console.log("intial");
-			$rootScope.AnimatorEngine = new AnimatorEngine();
-		}
-		$rootScope.AnimatorEngine.start();
+		
 
 		$scope.kw = "";
 		$scope.hello = "Hello!! It is Edisonthk AngularJS boilerplate";
